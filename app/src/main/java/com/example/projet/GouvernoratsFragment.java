@@ -2,6 +2,7 @@ package com.example.projet;
 
 import android.os.Bundle;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -30,8 +31,8 @@ public class GouvernoratsFragment extends Fragment {
         titre.setTextSize(23);
         titre.setTextColor(Color.rgb(18, 59, 93));
         titre.setGravity(Gravity.CENTER);
+        titre.setTypeface(null, Typeface.BOLD);
         titre.setPadding(10, 20, 10, 25);
-        titre.setTypeface(null, android.graphics.Typeface.BOLD);
 
         layout.addView(titre);
 
@@ -40,8 +41,8 @@ public class GouvernoratsFragment extends Fragment {
                 "Nabeul", "Zaghouan", "Bizerte", "Béja",
                 "Jendouba", "Le Kef", "Siliana", "Sousse",
                 "Monastir", "Mahdia", "Sfax", "Kairouan",
-                "Kasserine", "Sidi Bouzid", "Gafsa", "Tozeur",
-                "Kébili", "Gabès", "Médenine", "Tataouine"
+                "Kasserine", "Sidi Bouzid", "Gabès", "Médenine",
+                "Tataouine", "Gafsa", "Tozeur", "Kébili"
         };
 
         for (int i = 0; i < gouvernorats.length; i++) {
@@ -61,7 +62,8 @@ public class GouvernoratsFragment extends Fragment {
                             ViewGroup.LayoutParams.WRAP_CONTENT
                     );
 
-            params.setMargins(0, 5, 0, 5);
+            params.setMargins(0, 6, 0, 6);
+
             layout.addView(item, params);
         }
 

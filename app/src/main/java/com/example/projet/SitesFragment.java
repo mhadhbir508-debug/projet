@@ -77,11 +77,26 @@ public class SitesFragment extends Fragment {
             layout.addView(item, params);
             String siteSelectionne = sites[i];
 
+
             item.setOnClickListener(v -> {
-                Intent intent = new Intent(requireContext(), DetailActivity.class);
-                intent.putExtra("nomSite", siteSelectionne);
-                startActivity(intent);
+
+                if (siteSelectionne.contains("Sidi Bou Said")) {
+
+                    Intent intent = new Intent(requireContext(),
+                            SidiBouSaidActivity.class);
+
+                    startActivity(intent);
+
+                } else {
+
+                    Intent intent = new Intent(requireContext(),
+                            DetailActivity.class);
+
+                    intent.putExtra("nomSite", siteSelectionne);
+                    startActivity(intent);
+                }
             });
+
         }
 
         scrollView.addView(layout);
