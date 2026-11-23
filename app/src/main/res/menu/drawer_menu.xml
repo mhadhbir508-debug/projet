@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_accueil"
+        android:title="Accueil" />
+
+    <item
+        android:id="@+id/nav_sites"
+        android:title="Sites touristiques" />
+
+    <item
+        android:id="@+id/nav_gouvernorats"
+        android:title="Gouvernorats" />
+
+    <item
+        android:id="@+id/nav_favoris"
+        android:title="Favoris" />
+
+    <item
+        android:id="@+id/nav_apropos"
+        android:title="À propos" />
+</menu>
