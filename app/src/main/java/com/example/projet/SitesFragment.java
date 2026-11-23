@@ -1,64 +1,106 @@
 package com.example.projet;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
+import android.content.Intent;
+import android.graphics.Color;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
+import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link SitesFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import androidx.fragment.app.Fragment;
+
 public class SitesFragment extends Fragment {
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public SitesFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment SitesFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static SitesFragment newInstance(String param1, String param2) {
-        SitesFragment fragment = new SitesFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
+    private LinearLayout layout;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_sites, container, false);
+
+        ScrollView scrollView = new ScrollView(requireContext());
+
+        layout = new LinearLayout(requireContext());
+        layout.setOrientation(LinearLayout.VERTICAL);
+        layout.setPadding(20, 20, 20, 20);
+        layout.setBackgroundColor(Color.rgb(245, 247, 250));
+
+        TextView titre = new TextView(requireContext());
+        titre.setText("Sites touristiques de Tunisie 🇹🇳");
+        titre.setTextSize(23);
+        titre.setTextColor(Color.rgb(18, 59, 93));
+        titre.setGravity(Gravity.CENTER);
+        titre.setPadding(10, 20, 10, 25);
+        titre.setTypeface(null, android.graphics.Typeface.BOLD);
+
+        layout.addView(titre);
+
+        String[] sites = {
+                "Amphithéâtre d'El Jem - Mahdia",
+                "Sidi Bou Said - Tunis",
+                "Carthage - Tunis",
+                "Médina de Tunis - Tunis",
+                "Cap Bon - Nabeul",
+                "Plage de Hammamet - Nabeul",
+                "Médina de Kairouan - Kairouan",
+                "Chott el Jerid - Tozeur",
+                "Oasis de Chebika - Tozeur",
+                "Sahara de Douz - Kébili",
+                "Matmata - Gabès",
+                "Djerba - Médenine",
+                "Ksar Ouled Soltane - Tataouine",
+                "Ribat de Monastir - Monastir",
+                "Médina de Sousse - Sousse",
+                "Îles Kerkennah - Sfax"
+        };
+
+        for (int i = 0; i < sites.length; i++) {
+
+            TextView item = new TextView(requireContext());
+
+            item.setText((i + 1) + " - " + sites[i]);
+            item.setTextSize(17);
+            item.setTextColor(Color.rgb(18, 59, 93));
+            item.setPadding(20, 18, 20, 18);
+            item.setBackgroundColor(Color.WHITE);
+            item.setElevation(3);
+
+            LinearLayout.LayoutParams params =
+                    new LinearLayout.LayoutParams(
+                            ViewGroup.LayoutParams.MATCH_PARENT,
+                            ViewGroup.LayoutParams.WRAP_CONTENT
+                    );
+
+            params.setMargins(0, 5, 0, 5);
+            layout.addView(item, params);
+            String siteSelectionne = sites[i];
+
+            item.setOnClickListener(v -> {
+                Intent intent = new Intent(requireContext(), DetailActivity.class);
+                intent.putExtra("nomSite", siteSelectionne);
+                startActivity(intent);
+            });
+        }
+
+        scrollView.addView(layout);
+
+        return scrollView;
+    }
+    private void afficherDetails(String nomSite) {
+
+        TextView details = new TextView(requireContext());
+
+        details.setText("Détails de : " + nomSite
+                + "\n\nRestaurants"
+                + "\nHôtels"
+                + "\nCafés");
+
+        details.setTextSize(18);
+        details.setTextColor(Color.BLACK);
+        layout.addView(details);
+
+        // Afficher les détails dans la même page
     }
 }

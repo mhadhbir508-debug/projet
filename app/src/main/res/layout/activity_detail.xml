@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:onClick="ouvrirLieu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/imageSite"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/eljem"
+            android:contentDescription="Amphithéâtre d'El Jem" />
+
+        <TextView
+            android:id="@+id/txtNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amphithéâtre d'El Jem"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/txtGouvernorat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gouvernorat : Mahdia"
+            android:textSize="18sp"
+            android:textColor="#555555"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="L'amphithéâtre d'El Jem est un monument romain célèbre situé en Tunisie. Il représente un exemple remarquable de l'architecture romaine et fait partie du patrimoine mondial de l'UNESCO."
+            android:textSize="17sp"
+            android:textColor="#333333"
+            android:layout_marginTop="18dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 - El Hana Café &amp; Restaurant"
+            android:tag="El Hana Cafe et Restaurant"
+            android:textSize="17sp"
+            android:textColor="#1565C0"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:onClick="ouvrirLieu" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2 - Restaurant Le Bonheur 1"
+            android:tag="Restaurant Le Bonheur 1"
+            android:textSize="17sp"
+            android:textColor="#1565C0"
+            android:padding="15dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:onClick="ouvrirLieu" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3 - Le Bonheur 2"
+            android:tag="Le Bonheur 2"
+            android:textSize="17sp"
+            android:textColor="#1565C0"
+            android:padding="15dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:onClick="ouvrirLieu" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hôtels à proximité 🏨"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 - Hotel Julius"
+            android:tag="Hotel Julius"
+            android:textSize="17sp"
+            android:textColor="#1565C0"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:onClick="ouvrirLieu" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2 - DAR AMMAR Hotel"
+            android:tag="DAR AMMAR Hotel"
+            android:textSize="17sp"
+            android:textColor="#1565C0"
+            android:padding="15dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:onClick="ouvrirLieu" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3 - Hotel Ksar Eljem"
+            android:tag="Hotel Ksar Eljem"
+            android:textSize="17sp"
+            android:textColor="#1565C0"
+            android:padding="15dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:onClick="ouvrirLieu" />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cafés à proximité ☕"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 - Venus Cafeshop"
+            android:tag="Venus Cafeshop"
+            android:textSize="17sp"
+            android:textColor="#1565C0"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:onClick="ouvrirLieu" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2 - Big Mahmoud"
+            android:tag="Big Mahmoud"
+            android:textSize="17sp"
+            android:textColor="#1565C0"
+            android:padding="15dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:onClick="ouvrirLieu" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3 - Café Central Eljem"
+            android:tag="Café Central Eljem"
+            android:textSize="17sp"
+            android:textColor="#1565C0"
+            android:padding="15dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:onClick="ouvrirLieu" />
+    </LinearLayout>
+
+</ScrollView>

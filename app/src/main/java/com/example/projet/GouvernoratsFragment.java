@@ -1,64 +1,72 @@
 package com.example.projet;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
+import android.graphics.Color;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
+import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link GouvernoratsFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import androidx.fragment.app.Fragment;
+
 public class GouvernoratsFragment extends Fragment {
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public GouvernoratsFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment GouvernoratsFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static GouvernoratsFragment newInstance(String param1, String param2) {
-        GouvernoratsFragment fragment = new GouvernoratsFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_gouvernorats, container, false);
+
+        ScrollView scrollView = new ScrollView(requireContext());
+
+        LinearLayout layout = new LinearLayout(requireContext());
+        layout.setOrientation(LinearLayout.VERTICAL);
+        layout.setPadding(20, 20, 20, 20);
+        layout.setBackgroundColor(Color.rgb(245, 247, 250));
+
+        TextView titre = new TextView(requireContext());
+        titre.setText("Les 24 gouvernorats de Tunisie 🇹🇳");
+        titre.setTextSize(23);
+        titre.setTextColor(Color.rgb(18, 59, 93));
+        titre.setGravity(Gravity.CENTER);
+        titre.setPadding(10, 20, 10, 25);
+        titre.setTypeface(null, android.graphics.Typeface.BOLD);
+
+        layout.addView(titre);
+
+        String[] gouvernorats = {
+                "Tunis", "Ariana", "Ben Arous", "Manouba",
+                "Nabeul", "Zaghouan", "Bizerte", "Béja",
+                "Jendouba", "Le Kef", "Siliana", "Sousse",
+                "Monastir", "Mahdia", "Sfax", "Kairouan",
+                "Kasserine", "Sidi Bouzid", "Gafsa", "Tozeur",
+                "Kébili", "Gabès", "Médenine", "Tataouine"
+        };
+
+        for (int i = 0; i < gouvernorats.length; i++) {
+
+            TextView item = new TextView(requireContext());
+
+            item.setText((i + 1) + " - " + gouvernorats[i]);
+            item.setTextSize(18);
+            item.setTextColor(Color.rgb(18, 59, 93));
+            item.setPadding(20, 18, 20, 18);
+            item.setBackgroundColor(Color.WHITE);
+            item.setElevation(3);
+
+            LinearLayout.LayoutParams params =
+                    new LinearLayout.LayoutParams(
+                            ViewGroup.LayoutParams.MATCH_PARENT,
+                            ViewGroup.LayoutParams.WRAP_CONTENT
+                    );
+
+            params.setMargins(0, 5, 0, 5);
+            layout.addView(item, params);
+        }
+
+        scrollView.addView(layout);
+
+        return scrollView;
     }
 }
