@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:minHeight="48dp"
+            android:src="@drawable/ksar_ouled_soltane"
+            android:scaleType="centerCrop"
+            android:contentDescription="Ksar Ouled Soltane" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Ksar Ouled Soltane"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Gouvernorat : Tataouine"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Ksar Ouled Soltane est un ancien grenier collectif traditionnel situé dans le sud tunisien. Il est célèbre pour son architecture berbère et ses ghorfas superposées, utilisées autrefois pour conserver les récoltes. C'est un lieu historique qui représente le patrimoine architectural du sud de la Tunisie."
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Restaurants à proximité 🍽️"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:layout_marginTop="22dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Restaurants à Tataouine"
+            android:tag="Restaurants à Tataouine"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="16sp"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Hôtels à proximité 🏨"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:layout_marginTop="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Hôtels à Tataouine"
+            android:tag="Hôtels à Tataouine"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="16sp"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Cafés à proximité ☕"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:layout_marginTop="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Cafés à Tataouine"
+            android:tag="Cafés à Tataouine"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="16sp"
+            android:padding="10dp" />
+
+    </LinearLayout>
+</ScrollView>

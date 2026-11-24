@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/kairouan"
+            android:scaleType="centerCrop"
+            android:contentDescription="Médina de Kairouan" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Médina de Kairouan"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:gravity="center"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gouvernorat : Kairouan"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="La Médina de Kairouan est un lieu historique et culturel important en Tunisie. Elle est célèbre pour la Grande Mosquée, ses monuments anciens, ses souks traditionnels et ses tapis artisanaux."
+            android:textSize="16sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restaurants 🍽️"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restaurant El Brija"
+            android:tag="Restaurant El Brija, Kairouan Tunisia"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="17sp"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restaurant Dar Abderrahman Zarrouk"
+            android:tag="Dar Abderrahman Zarrouk, Kairouan Tunisia"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="17sp"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hôtels 🏨"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="La Kasbah Hotel"
+            android:tag="La Kasbah Hotel, Kairouan Tunisia"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="17sp"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hôtel Continental"
+            android:tag="Hotel Continental, Kairouan Tunisia"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="17sp"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cafés ☕"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Café El Médina"
+            android:tag="Cafe El Medina, Kairouan Tunisia"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="17sp"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>

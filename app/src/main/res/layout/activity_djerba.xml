@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/djerba"
+            android:scaleType="centerCrop"
+            android:contentDescription="Djerba" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Djerba"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:gravity="center"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gouvernorat : Médenine"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Djerba est une île magnifique du sud-est tunisien. Elle est connue pour ses plages, ses villages traditionnels, la synagogue de la Ghriba, Houmt Souk et son patrimoine culturel."
+            android:textSize="16sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restaurants 🍽️"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restaurant Essofra"
+            android:tag="Restaurant Essofra, Houmt Souk Djerba Tunisia"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="17sp"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restaurant Haroun"
+            android:tag="Restaurant Haroun, Houmt Souk Djerba Tunisia"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="17sp"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hôtels 🏨"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Radisson Blu Palace Resort"
+            android:tag="Radisson Blu Palace Resort Djerba Tunisia"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="17sp"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hasdrubal Prestige Thalassa"
+            android:tag="Hasdrubal Prestige Thalassa Djerba Tunisia"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="17sp"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cafés ☕"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Café El Fondouk"
+            android:tag="Cafe El Fondouk, Houmt Souk Djerba Tunisia"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="17sp"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>

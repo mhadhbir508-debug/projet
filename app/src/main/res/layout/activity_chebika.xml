@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/chebika"
+            android:scaleType="centerCrop"
+            android:contentDescription="Oasis de Chebika" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Oasis de Chebika"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:gravity="center"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gouvernorat : Tozeur"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="L'oasis de Chebika est une magnifique oasis de montagne située près de Tozeur. Elle est connue pour ses sources d'eau, ses cascades, ses palmiers et ses paysages naturels au milieu des montagnes."
+            android:textSize="16sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restaurants 🍽️"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restaurant Le Minaret"
+            android:tag="Restaurant Le Minaret, Tozeur Tunisia"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="17sp"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restaurant Dar Deda"
+            android:tag="Dar Deda, Tozeur Tunisia"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="17sp"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hôtels 🏨"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Anantara Sahara Tozeur"
+            android:tag="Anantara Sahara Tozeur Tunisia"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="17sp"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ras El Ain Hotel"
+            android:tag="Ras El Ain Hotel, Tozeur Tunisia"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="17sp"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cafés ☕"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Café de Chebika"
+            android:tag="Cafe de Chebika, Tozeur Tunisia"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="17sp"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/chott_jerid"
+            android:scaleType="centerCrop"
+            android:contentDescription="Chott el Jerid" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chott el Jerid"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:gravity="center"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gouvernorat : Tozeur et Kébili"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chott el Jerid est un immense lac salé situé au sud de la Tunisie. Il est connu pour ses paysages extraordinaires, ses couleurs changeantes et ses mirages pendant les journées chaudes."
+            android:textSize="16sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restaurants 🍽️"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restaurant Le Minaret"
+            android:tag="Restaurant Le Minaret, Tozeur Tunisia"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="17sp"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restaurant Dar Deda"
+            android:tag="Dar Deda, Tozeur Tunisia"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="17sp"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hôtels 🏨"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Anantara Sahara Tozeur"
+            android:tag="Anantara Sahara Tozeur Tunisia"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="17sp"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ras El Ain Hotel"
+            android:tag="Ras El Ain Hotel, Tozeur Tunisia"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="17sp"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cafés ☕"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Café Sidi Bouhlel"
+            android:tag="Cafe Sidi Bouhlel, Tozeur Tunisia"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="17sp"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>

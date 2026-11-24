@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:src="@drawable/medina_sousse"
+            android:scaleType="centerCrop"
+            android:contentDescription="Medina de Sousse" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Médina de Sousse"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gouvernorat : Sousse"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="La Médina de Sousse est un site historique classé au patrimoine mondial de l'UNESCO. Elle est connue pour ses remparts, ses ruelles traditionnelles, son Ribat, sa Grande Mosquée et ses souks animés. Elle représente un exemple remarquable de l'architecture arabo-musulmane en Tunisie."
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restaurants à proximité 🍽️"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:layout_marginTop="22dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Restaurants à Sousse"
+            android:tag="Restaurants à Sousse"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="16sp"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hôtels à proximité 🏨"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:layout_marginTop="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Hôtels à Sousse"
+            android:tag="Hôtels à Sousse"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="16sp"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cafés à proximité ☕"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:layout_marginTop="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Cafés à Sousse"
+            android:tag="Cafés à Sousse"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="16sp"
+            android:padding="10dp" />
+
+    </LinearLayout>
+</ScrollView>

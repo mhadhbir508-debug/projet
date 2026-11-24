@@ -84,17 +84,107 @@ public class SitesFragment extends Fragment {
 
                     Intent intent = new Intent(requireContext(),
                             SidiBouSaidActivity.class);
-
                     startActivity(intent);
 
-                } else {
+                } else if (siteSelectionne.contains("Carthage")) {
+
+                    Intent intent = new Intent(requireContext(),
+                            CarthageActivity.class);
+                    startActivity(intent);
+
+                } else if (siteSelectionne.contains("Hammamet")) {
+
+                    Intent intent = new Intent(requireContext(),
+                            HammametActivity.class);
+                    startActivity(intent);
+
+                }else if (siteSelectionne.contains("Médina de Tunis")) {
+
+                    Intent intent = new Intent(requireContext(),
+                            MedinaTunisActivity.class);
+                    startActivity(intent);
+
+                }else if (siteSelectionne.contains("Cap Bon")) {
+
+                    Intent intent = new Intent(requireContext(),
+                            CapBonActivity.class);
+                    startActivity(intent);
+
+                }else if (siteSelectionne.contains("Kairouan")) {
+
+                    Intent intent = new Intent(requireContext(),
+                            KairouanActivity.class);
+                    startActivity(intent);
+
+                }else if (siteSelectionne.contains("Chott el Jerid")) {
+
+                    Intent intent = new Intent(requireContext(),
+                            ChottJeridActivity.class);
+                    startActivity(intent);
+
+                }else if (siteSelectionne.contains("Chebika")) {
+
+                    Intent intent = new Intent(requireContext(),
+                            ChebikaActivity.class);
+                    startActivity(intent);
+
+                }else if (siteSelectionne.contains("Douz")) {
+
+                    Intent intent = new Intent(requireContext(),
+                            DouzActivity.class);
+                    startActivity(intent);
+
+                }else if (siteSelectionne.contains("Matmata")) {
+
+                    Intent intent = new Intent(requireContext(),
+                            MatmataActivity.class);
+                    startActivity(intent);
+
+                }else if (siteSelectionne.contains("Djerba")) {
+
+                    Intent intent = new Intent(requireContext(),
+                            DjerbaActivity.class);
+                    startActivity(intent);
+
+                }
+                else if (siteSelectionne.contains("Ksar Ouled Soltane")) {
+
+                    Intent intent = new Intent(requireContext(),
+                            KsarOuledSoltaneActivity.class);
+                    startActivity(intent);
+
+                }
+                else if (siteSelectionne.contains("Ribat de Monastir")) {
+
+                    Intent intent = new Intent(requireContext(),
+                            RibatMonastirActivity.class);
+                    startActivity(intent);
+
+                }
+                else if (siteSelectionne.contains("Médina de Sousse")) {
+
+                    Intent intent = new Intent(requireContext(),
+                            MedinaSousseActivity.class);
+                    startActivity(intent);
+
+                }
+
+                else if (siteSelectionne.contains("Kerkennah")) {
+
+                    Intent intent = new Intent(requireContext(),
+                            KerkennahActivity.class);
+                    startActivity(intent);
+
+                }
+
+                else {
 
                     Intent intent = new Intent(requireContext(),
                             DetailActivity.class);
-
                     intent.putExtra("nomSite", siteSelectionne);
                     startActivity(intent);
                 }
+
             });
 
         }
@@ -116,6 +206,6 @@ public class SitesFragment extends Fragment {
         details.setTextColor(Color.BLACK);
         layout.addView(details);
 
-        // Afficher les détails dans la même page
+
     }
 }

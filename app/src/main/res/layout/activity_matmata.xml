@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/matmata"
+            android:scaleType="centerCrop"
+            android:contentDescription="Matmata" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Matmata"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:gravity="center"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gouvernorat : Gabès"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Matmata est un village du sud tunisien connu pour ses habitations troglodytiques creusées dans la terre. Ses paysages uniques et son patrimoine traditionnel attirent de nombreux visiteurs."
+            android:textSize="16sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restaurants 🍽️"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restaurant Sidi Driss"
+            android:tag="Hotel Sidi Driss Restaurant, Matmata Tunisia"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="17sp"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restaurant Les Berbères"
+            android:tag="Restaurant Les Berberes, Matmata Tunisia"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="17sp"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hôtels 🏨"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hotel Sidi Driss"
+            android:tag="Hotel Sidi Driss, Matmata Tunisia"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="17sp"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hotel Marhala"
+            android:tag="Hotel Marhala, Matmata Tunisia"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="17sp"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cafés ☕"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#123B5D"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Café Matmata"
+            android:tag="Cafe Matmata Tunisia"
+            android:onClick="ouvrirLieu"
+            android:clickable="true"
+            android:textSize="17sp"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>
